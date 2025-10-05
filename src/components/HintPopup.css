@@ -154,6 +154,26 @@
   letter-spacing: 0.3rem;
 }
 
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .popup-overlay {
+    padding: 1.5rem;
+  }
+
+  .popup-card {
+    max-width: 450px;
+  }
+  
+  .popup-title {
+    font-size: 1.6rem;
+  }
+  
+  .popup-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .popup-card {
     padding: 1.5rem;
@@ -181,6 +201,31 @@
   .popup-button {
     padding: 0.9rem 1.2rem;
     font-size: 1rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .popup-overlay {
+    padding: 0.5rem;
+  }
+
+  .popup-card {
+    padding: 1.2rem;
+    max-width: 98%;
+  }
+  
+  .popup-title {
+    font-size: 1.2rem;
+  }
+  
+  .popup-text {
+    font-size: 0.95rem;
+  }
+
+  .popup-button {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
   }
 }
 

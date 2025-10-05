@@ -265,6 +265,38 @@
   transform: scale(-1);
 }
 
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .question-card-container {
+    padding: 1.5rem;
+  }
+
+  .grimoire-page {
+    padding: 2.5rem;
+  }
+  
+  .question-text {
+    font-size: 1.3rem;
+  }
+  
+  .option-button {
+    font-size: 1.1rem;
+    padding: 1rem 0.9rem;
+  }
+  
+  .option-label {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .hint-button {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .question-card-container {
     padding: 10px;
@@ -307,6 +339,37 @@
 
   .page-decoration {
     font-size: 1.2rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .question-card-container {
+    padding: 5px;
+  }
+
+  .grimoire-page {
+    padding: 1rem 0.8rem;
+  }
+  
+  .question-text {
+    font-size: 1rem;
+  }
+  
+  .option-button {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.6rem;
+  }
+  
+  .option-label {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .hint-button {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
   }
 }
 

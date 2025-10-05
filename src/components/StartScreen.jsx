@@ -42,7 +42,7 @@ const StartScreen = ({ onStart }) => {
 
         <div className="credits">
           <p className="credits-text">
-            Creado por Paula Andrea Villadiego Perez, Andres Julian Barrios Arrieta y MARIA ANTONIA ZAPATA HERNANDEZ
+            Creado por Paula Andrea Villadiego Perez, Andres Julian Barrios Arrieta y Maria Antonia Zapata Hernandez
           </p>
         </div>
       </div>

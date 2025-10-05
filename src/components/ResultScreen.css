@@ -347,6 +347,30 @@
   letter-spacing: 0.5rem;
 }
 
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .result-screen {
+    padding: 1.5rem;
+  }
+
+  .results-book {
+    padding: 2.5rem;
+  }
+  
+  .results-title {
+    font-size: 2.2rem;
+  }
+
+  .score-number {
+    font-size: 4rem;
+  }
+
+  .potions-grid {
+    gap: 1rem;
+  }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .result-screen {
     padding: 10px;
@@ -416,6 +440,34 @@
 
   .percentage-text {
     font-size: 1.6rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .result-screen {
+    padding: 5px;
+  }
+
+  .results-book {
+    padding: 1rem 0.8rem;
+  }
+  
+  .results-title {
+    font-size: 1.6rem;
+  }
+
+  .score-number {
+    font-size: 2.5rem;
+  }
+
+  .potions-grid {
+    gap: 0.4rem;
+  }
+
+  .restart-button {
+    font-size: 1rem;
+    padding: 0.9rem 1.2rem;
   }
 }
 

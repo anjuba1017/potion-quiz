@@ -157,18 +157,30 @@
 @media (max-width: 768px) {
   .popup-card {
     padding: 1.5rem;
+    max-width: 95%;
   }
   
   .popup-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .popup-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .popup-hint {
+    font-size: 0.9rem;
   }
   
   .popup-actions {
     flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .popup-button {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
   }
 }
 

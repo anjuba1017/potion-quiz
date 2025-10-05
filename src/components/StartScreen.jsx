@@ -37,7 +37,13 @@ const StartScreen = ({ onStart }) => {
         </button>
 
         <div className="footer-ornament">
-          <div className="flourish">~</div>
+          <div className="flourish">~✦~</div>
+        </div>
+
+        <div className="credits">
+          <p className="credits-text">
+            Creado por Paula Andrea Villadiego Perez, Andres Julian Barrios Arrieta y MARIA ANTONIA ZAPATA HERNANDEZ
+          </p>
         </div>
       </div>
     </div>

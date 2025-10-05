@@ -39,6 +39,14 @@
   /* Adjust scale if needed - higher = more zoom, less black bars */
 }
 
+/* Mobile optimization for video */
+@media (max-width: 768px) {
+  .potion-animation-fullscreen {
+    object-fit: contain;
+    transform: scale(1);
+  }
+}
+
 /* Results Section */
 .results-container {
   width: 100%;
@@ -340,16 +348,30 @@
 }
 
 @media (max-width: 768px) {
+  .result-screen {
+    padding: 10px;
+  }
+
+  .results-container {
+    max-width: 100%;
+  }
+
   .results-book {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
   
   .results-title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+  }
+
+  .witch-face,
+  .witch-face-sad {
+    font-size: 3rem;
   }
   
   .message-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
   
   .score-section {
@@ -361,15 +383,39 @@
   .time-box {
     min-width: auto;
     width: 100%;
+    padding: 1rem 1.5rem;
+  }
+
+  .score-number {
+    font-size: 3rem;
+  }
+
+  .potions-title {
+    font-size: 1.3rem;
   }
   
   .potions-grid {
-    gap: 0.8rem;
+    gap: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .potion-bottle-svg {
+    transform: scale(0.9);
   }
   
   .restart-button {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1rem 1.5rem;
+    max-width: 100%;
+  }
+
+  .percentage-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .percentage-text {
+    font-size: 1.6rem;
   }
 }
 

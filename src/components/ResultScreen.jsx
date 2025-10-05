@@ -48,8 +48,14 @@ const ResultScreen = ({ answers, totalQuestions, startTime, endTime, onRestart }
             <video 
               autoPlay 
               playsInline
+              preload="auto"
               className="potion-animation-fullscreen"
               onEnded={handleVideoEnd}
+              onError={(e) => {
+                console.error('Video error:', e);
+                // If video fails, show results after 3 seconds
+                setTimeout(handleVideoEnd, 3000);
+              }}
             >
               <source 
                 src={import.meta.env.BASE_URL + (isSuccess ? 'correct-potion.mp4' : 'incorrect-potion.mp4')} 

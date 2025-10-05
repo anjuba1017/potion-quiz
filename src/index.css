@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #f3e8d2;
+}
+
+button {
+  font-family: 'EB Garamond', 'Linden Hill', 'Georgia', serif;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

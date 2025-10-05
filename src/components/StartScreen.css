@@ -1,0 +1,158 @@
+.start-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.book-page {
+  background: linear-gradient(to bottom, #5a4e3c, #4a4234);
+  border: 3px solid #6f6249;
+  border-radius: 8px;
+  padding: 3rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  text-align: center;
+}
+
+.ink-border {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid #6f6249;
+  border-style: double;
+  pointer-events: none;
+  border-radius: 4px;
+  opacity: 0.4;
+}
+
+.title {
+  font-family: 'IM Fell English', serif;
+  font-size: 3rem;
+  color: #f3e8d2;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.title-line {
+  display: block;
+}
+
+.subtitle-ornament {
+  font-size: 1.2rem;
+  color: #a48e72;
+  margin: 1.5rem 0;
+  letter-spacing: 0.5rem;
+}
+
+.instructions {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border-left: 3px solid #6f6249;
+  border-right: 3px solid #6f6249;
+}
+
+.instruction-text {
+  font-size: 1.3rem;
+  color: #f3e8d2;
+  margin: 0.8rem 0;
+  line-height: 1.8;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.hint-info {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: #a48e72;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.hint-info p {
+  margin: 0.5rem 0;
+}
+
+.start-button {
+  font-size: 1.3rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(to bottom, #6f6249, #5a4e3c);
+  color: #f3e8d2;
+  border: 3px solid #8a7a5f;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.start-button:hover {
+  background: linear-gradient(to bottom, #7f7352, #6f6249);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.button-ornament-left,
+.button-ornament-right {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.footer-ornament {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(111, 98, 73, 0.3);
+}
+
+.flourish {
+  font-size: 2rem;
+  color: #6f6249;
+  opacity: 0.4;
+  letter-spacing: 1rem;
+}
+
+@media (max-width: 768px) {
+  .book-page {
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .instruction-text {
+    font-size: 1.1rem;
+  }
+  
+  .start-button {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+  }
+}
+

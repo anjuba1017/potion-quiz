@@ -45,18 +45,18 @@ const ResultScreen = ({ answers, totalQuestions, startTime, endTime, onRestart }
     <div className="result-screen">
       {showAnimation && (
         <div className="animation-container fullscreen">
-          <video 
-            autoPlay 
-            playsInline
-            className="potion-animation-fullscreen"
-            onEnded={handleVideoEnd}
-          >
-            <source 
-              src={isSuccess ? '/correct-potion.mp4' : '/incorrect-potion.mp4'} 
-              type="video/mp4" 
-            />
-            Tu navegador no soporta el elemento de video.
-          </video>
+            <video 
+              autoPlay 
+              playsInline
+              className="potion-animation-fullscreen"
+              onEnded={handleVideoEnd}
+            >
+              <source 
+                src={import.meta.env.BASE_URL + (isSuccess ? 'correct-potion.mp4' : 'incorrect-potion.mp4')} 
+                type="video/mp4" 
+              />
+              Tu navegador no soporta el elemento de video.
+            </video>
         </div>
       )}
 

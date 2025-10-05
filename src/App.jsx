@@ -37,7 +37,7 @@ function App() {
     // Start background audio after user interaction (button click)
     try {
       if (!backgroundAudioRef.current) {
-        backgroundAudioRef.current = new Audio('/boiling-water.mp3');
+        backgroundAudioRef.current = new Audio(import.meta.env.BASE_URL + 'boiling-water.mp3');
         backgroundAudioRef.current.loop = true;
         backgroundAudioRef.current.volume = 1.0; // Maximum volume for background
         

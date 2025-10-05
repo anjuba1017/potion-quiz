@@ -17,10 +17,10 @@ const QuestionCard = ({
 
   useEffect(() => {
     // Initialize feedback audio elements
-    correctAudioRef.current = new Audio('/correct-answer.mp3');
+    correctAudioRef.current = new Audio(import.meta.env.BASE_URL + 'correct-answer.mp3');
     correctAudioRef.current.volume = 0.7;
     
-    wrongAudioRef.current = new Audio('/wrong-answer.mp3');
+    wrongAudioRef.current = new Audio(import.meta.env.BASE_URL + 'wrong-answer.mp3');
     wrongAudioRef.current.volume = 0.7;
 
     // Cleanup function
